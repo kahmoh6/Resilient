@@ -38,6 +38,28 @@ footer{margin-top: 34px; color: var(--muted); font-size: 13px; text-align: cente
     .container{padding: 16px}
 }
 
+.body{
+    font-size: 18px;
+    padding: 20px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    body{
+        font-size: 16px;
+        padding: 15px;
+
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    body{
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
 .contact.card {
     max-width: 650px !important; /* Make it wider */
     width: 100% !important;
