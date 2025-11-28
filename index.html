@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resilient Recovery - Contact & Help</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="simple crypto support landing page with contact form you can Clone.">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="brand">
+                <div class="logo">R.R</div>
+                <div>
+                    <strong>Resilient Recovery</strong>
+                    <div class="muted" style="font-size: 12px">Expert crypto recovery & investigation support</div>
+                </div>
+            </div>
+            <nav>
+                <a href="#features">Why us</a>
+                 <a href="#contact">Contact</a>
+                  <a href="#faq">FAQ</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div>
+                    <div class="eyebrow">Need help with a crypto issue?</div>
+                    <h1>Expert guidance for wallet issues, on-chain recovery step, and transaction investigations</h1>
+                    <p class="lead">Submit your issue below. We'll reply with actionable steps - please never share private keys. We support wallet recovery guidance, transaction troubleshooting, suspicious activity reporting and more.</p>
+
+                    <div class="features" id="features">
+                        <div class="features">
+                            <strong>Privacy-focused</strong>
+                            <div class="muted">We operate at a professional crypto-security level - never share private keys or seed phrases under any circumstance.</div>
+                        </div>
+                        <div class="features">
+                            <strong>Expert review</strong>
+                            <div class="muted">Every case is analyzed with on-chain techniques and recummended next-step strategies.</div>
+                        </div>
+                        <div class="featues">
+                            <strong>Advanced guidance</strong>
+                            <div class="muted">We offer expert-level diagnostics, chain-analysis notes, and recovery probability assessments.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="kamo">
+                <aside class="card" id="contact">
+                    <h3 style="margin:0 0 8px">Contact support</h3>
+                    <p class="muted" style="margin:0 0 12px;font-size:13px">Fill this form - your message will be send to the support inbox.</p>
+
+                    <div class="contact">
+                        <h4>Contact us for <strong>assist</strong> via.!</h4>
+                        <a href="mailto:ndumnankam@gmail.com" class="contact-btn">Email Me</a><br>
+                        <a href="https://wa.me/2347067879008">WhatsApp Me</a>
+                        
+                    </div>
+                     
+            
+                    <script>
+                        //Basic Client-side validation + nice UX. Server must handle actual storage or forwarding.
+                        const form = document.getElementById('supportForm');
+                        const submitBtn = document.getElementById('submitBtn');
+                        const formMsg = document.getElementById('formMsg');
+
+                        form.addEventListener('submit', async (e) => {
+                            e.preventDefault();
+                            submitBtn.disabled = true;
+                            formMsg.textContent = 'Sending...';
+
+                            //If you use formspree, file uploads require paid plan; This example uses asimple POST to the acttion URL.
+
+                            const action = form.action;
+                            const formData = new FormData(form);
+
+
+                            try {
+                                const res = await fetch(action, {
+                                    method: 'POST',
+                                    body: formData
+                                    headers: {
+                                        'Accept': 'application/json'
+                                    }
+                                });
+
+                                if (res.ok) {
+                                    formMsg.textContent = 'Thanks - we receeived your request. Check your email for a reply.';
+                                    form.reset();
+                                } else {
+                                    const data = await res.json().catch(() =>({}));
+                                    formMsg.textContent = data.error ||'Server rejected the submission.';
+                                }
+                            } catch (error) {
+                                formMsg.textContent = 'Network error. Please check your connection and try again.';
+                            } finally {
+                                submitBtn.disabled = false;
+                            }
+                        });
+                    </script>
+                </aside> 
+                </div>
+            </section>
+
+            <section style="margin-top: 26px" id="fag">
+                <h3>FAQ</h3>
+                <div class="card" style="margin-top: 10px;">
+                    <p><strong>Q: Will you ever ask for my private key?</strong><br><span class="muted">A: Never. If someone asks for your private key, it's a scam. We only ask for public addressess, tx hashes, and safe logs.</span></p>
+                    <p><strong>Q: How long until I get a reply?</strong><br><span class="muted">A: Typical reply within 24-72 hours, depending on severity</span></p>
+                    <p><strong>Q: Can you recover funds?</strong><br><span class="muted">A: We provide guidance. Fund recovery is often impossible without exchange or chain-specific support.</span></p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            © <span id="2025"></span> Recovery - Do not share privat I'me keys. for urgent theft, contact the exchange or chain support and local authorities.
+        </footer>
+    </div>
+    <script>document.getElementById('year'). textContent = new Date().getFullYear();</script>
+</body>
+</html>
