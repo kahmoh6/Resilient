@@ -47,3 +47,13 @@ Contact-form select,
 Contact-form textarea{
     width: 100% /* Make all form fields full width */;
 },
+
+.contact-btn{
+    display: inline-block;
+    padding: 12px 20px;
+    background: #2d89ff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
