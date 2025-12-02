@@ -4,7 +4,7 @@ html,body{height: 100%;margin: 0;font-size: Inter,system-ui,-apple-system,Segoe 
 body{background: linear-gradient(180deg,#071129 0%,#07102a 60%);color: #e6eef8; line-height: 1.5}
 .container{max-width: 980px;margin: 36px auto;padding: 16px}
 header{display: flex; align-items: center;justify-content: space-between;}
-.brand{display: flex; gap: 12px; align-items: center;}
+.brand{display: flex; gap: 12px; align-items: center; vertical-align: top;}
 .logo{width: 44px;height: 44px;border-radius: 8px; background: linear-gradient(135deg,var(--accent),#06b6d4);display: flex;align-items: center;justify-content: center;font-weight: 700;}
 vav a{color: var(--muted);text-decoration: none;margin-left: 16px;}
 
@@ -16,15 +16,7 @@ h1{font-size: 36px;margin: 0 0 12px;}
 p.lead{color: #cbd5e1;margin: 0 0 18px;}
 .card{background: linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border: 1px solid rgba(255,255,255,0.04);padding: 18px;border-radius: 12px;}
 
-/* Contact Form */
-form{display: flex;flex-direction: column;gap: 12px;width: 100%; max-width: 650px;}
-label{font-size: 13px;color: var(--muted);}
-input{type=text}, input{type=email}, select,textarea{width: 100%;padding: 10px;border-radius: 8px; border:1px solid rgba(255,255,255,0.4);background:transparent;color:inherit}
-textarea{min-height: 120px;resize: vertical;}
-.row{display: flex;gap: 10px;}
-.row .col{flex: 1}
-.btn{background: var(--accent);border: none;color: white;padding: 10px 14px;border-radius: 10px;cursor: pointer;font-weight: 600;}
-.btn:disabled{opacity:0,6;cursor:default}
+
 
 .features{display: flex;gap:12px;margin-top: 18px;}
 .features{flex: 1;padding: 14px;border-radius: 10px; background: rgba(255,255,255,0.02);}
@@ -64,18 +56,45 @@ footer{margin-top: 34px; color: var(--muted); font-size: 13px; text-align: cente
     max-width: 650px !important; /* Make it wider */
     width: 100% !important;
 }
-.Contact-form input,
-Contact-form select,
-Contact-form textarea{
-    width: 100% /* Make all form fields full width */;
-},
 
-.contact-btn{
-    display: inline-block;
-    padding: 12px 20px;
-    background: #2d89ff;
+.email-button{
+    background-color: #3a3a3b;
     color: white;
-    border-radius: 8px;
-    text-decoration: none;
+    border: none;
+    height: 36px;
+    width: 80px;
+    border-radius: 18px;
     font-weight: bold;
+    font-size: 15;
+    
+    margin: 8px;
+}
+
+.email-button:hover{
+    opacity: 0.5;
+}
+
+.email-button:active{
+    background-color: white;
+}
+
+.telegram-button{
+    background-color: #3a3a3b;
+    background-color: none;
+    border-color: rgba(59, 58, 58, 0.137);
+    border-style: solid;
+    border-width: 1px;
+    color: black;
+    height: 36px;
+    width: 80px;
+    border-radius: 2ps;
+
+}
+
+.telegram-button:hover{
+    opacity: 0.5;
+}
+
+.telegram-button:active{
+    background-color: white;
 }

@@ -18,9 +18,20 @@
                 </div>
             </div>
             <nav>
+                <button class="why-us">
                 <a href="#features">Why us</a>
+                </button>
+
+                <button class="contact">
                  <a href="#contact">Contact</a>
+                </button>
+
+                <button class="FAQ">
                   <a href="#faq">FAQ</a>
+                </button>
+                <button class="testimonial">
+                <a href="#testimonies">Testimonies</a>
+                </button>
             </nav>
         </header>
 
@@ -51,11 +62,19 @@
                     <h3 style="margin:0 0 8px">Contact support</h3>
                     <p class="muted" style="margin:0 0 12px;font-size:13px">Fill this form - your message will be send to the support inbox.</p>
 
-                    <div class="contact">
+                    <div class="contact-form">
                         <h4>Contact us for <strong>assist</strong> via.!</h4>
-                        <a href="mailto:ndumnankam@gmail.com" class="contact-btn">Email Me</a><br>
-                        <a href="https://wa.me/2347067879008">WhatsApp Me</a>
-                        
+                        <button class="email-button">
+                                     <a href="mailto:resilientrecovery7@gmail.com" class="contact-btn">
+                            Email Us
+                        </a>
+                        <br>
+                        </button>
+                        <button  class="telegram-button">
+                        <a href="https://wa.me/2347067879008">
+                            Contact Us
+                        </a>
+                        </button>
                     </div>
                      
             
@@ -80,7 +99,7 @@
                                 const res = await fetch(action, {
                                     method: 'POST',
                                     body: formData
-                                    headers: {
+                                    header: {
                                         'Accept': 'application/json'
                                     }
                                 });
@@ -102,9 +121,67 @@
                 </aside> 
                 </div>
             </section>
+            <section style="margin-top: 26px" id="testimonies" >
+                <h3 class="card" id="testimonies">Client Testimonies</h3>
+                <div class="card" style="margin-top: 10px;">
+                    <p><strong>Michael Thompson</strong> – London, UK
+                  <span class="muted"> <br> "I lost £47,000 to a fake trading platform. 
+                    I thought it was gone forever until this team recovered 98% of my Bitcoin in just 12 days.
+                     Truly life-changing. Thank you!".</span></p>
+
+                     <p><strong>Sarah Jenkins</strong> – Texas, USA
+                       <span> <br> "Scammers drained my wallet with a phishing link. I was devastated. 
+                       These guys traced and recovered $89,400 worth of BTC. Professional, fast, and legit. 
+                       Highly recommend!".</span> </p>
+
+                       <p><strong>Oliver Schmidt</strong> – Berlin, Germany
+                       <span> <br> "I sent 6.2 BTC to the wrong address by mistake. 
+                       Everyone said it’s impossible to get back — but they did it in under 2 weeks. 
+                       Best money I ever spent!".</span></p>
+
+                       <p><strong>Emma Wilson</strong> – Toronto, Canada
+                       <span> <br> "Lost access to my old wallet from 2017 with over $120k inside. 
+                        They recovered my private keys and returned every single satoshi. 
+                        I’m still in shock — thank you!!".</span></p>
+
+                        <p><strong>David Patterson</strong> – Sydney, Australia
+                           <span> <br> "Fell for a pig-butchering scam and lost AUD $180,000. 
+                            This recovery team got back 91% of my crypto. 
+                            Honest, transparent, no upfront fees nonsense. Real heroes."</span></p>
+
+                        <p><strong>Jessica Brooks</strong> – Florida, USA
+                           <span> <br> "My Ledger was compromised and $73,000 in BTC vanished. 
+                            I contacted them in tears — 9 days later my coins were back in my new wallet. 
+                            God bless this team!" </span></p>   
+                        
+                          <p><strong>Mateusz Nowak </strong>– Warsaw, Poland
+                           <span> <br> "I was scammed by a fake exchange for €58,000. 
+                            Other companies asked for money upfront and disappeared. 
+                            These guys worked on success-only basis and recovered everything. 
+                            10/10."</span></p>  
+
+                          <p><strong>Charlotte Evans</strong> – Manchester, UK
+                           <span> <br> "Thought I’d never see my 4.1 BTC again after a romance scam.
+                             They kept me updated every step and recovered it all.
+                              Worth every penny of their fee!"</span></p>  
+
+                        <p><strong>Liam Anderson</strong> – California, USA
+                        <span>  <br>  "Rug-pull took $95k USDT and BTC from me. 
+                            Recovered in 11 days with full documentation. 
+                            These people know blockchain forensics better than anyone.
+                            "</span></p>   
+                            
+                        <p><strong>Sophie Laurent </strong>– Paris, France (living in Dubai)
+                           <span> <br> "Lost 8.7 BTC in a fake ICO years ago. 
+                            Gave up hope until I found this service.
+                             They successfully recovered my coins in 2025.
+                              I cried when I saw the transaction. 
+                              Merci infiniment!"</span></p>    
+                </div>
+            </section>
 
             <section style="margin-top: 26px" id="fag">
-                <h3>FAQ</h3>
+                <h3 class="card" id="faq">FAQ</h3>
                 <div class="card" style="margin-top: 10px;">
                     <p><strong>Q: Will you ever ask for my private key?</strong><br><span class="muted">A: Never. If someone asks for your private key, it's a scam. We only ask for public addressess, tx hashes, and safe logs.</span></p>
                     <p><strong>Q: How long until I get a reply?</strong><br><span class="muted">A: Typical reply within 24-72 hours, depending on severity</span></p>
@@ -115,7 +192,7 @@
         </main>
 
         <footer>
-            © <span id="2025"></span> Recovery - Do not share privat I'me keys. for urgent theft, contact the exchange or chain support and local authorities.
+            © <span id="2025">2025</span> Recovery - Do not share privat I'me keys. for urgent theft, contact the exchange or chain support and local authorities.
         </footer>
     </div>
     <script>document.getElementById('year'). textContent = new Date().getFullYear();</script>
