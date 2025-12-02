@@ -5,8 +5,13 @@ body{background: linear-gradient(180deg,#071129 0%,#07102a 60%);color: #e6eef8; 
 .container{max-width: 980px;margin: 36px auto;padding: 16px}
 header{display: flex; align-items: center;justify-content: space-between;}
 .brand{display: flex; gap: 12px; align-items: center; vertical-align: top;}
-.logo{width: 44px;height: 44px;border-radius: 8px; background: linear-gradient(135deg,var(--accent),#06b6d4);display: flex;align-items: center;justify-content: center;font-weight: 700;}
+.logo{width: 55px;height: 44px;border-radius: 8px; background: linear-gradient(135deg,var(--accent),#06b6d4);display: flex;align-items: center;justify-content: center;font-weight: 700;margin-left: 8px;}
 vav a{color: var(--muted);text-decoration: none;margin-left: 16px;}
+.navv{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
 
 
 main{margin-top: 28px;}
