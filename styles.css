@@ -10,7 +10,7 @@ vav a{color: var(--muted);text-decoration: none;margin-left: 16px;}
 .navv{
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 8px;
 }
 
 
