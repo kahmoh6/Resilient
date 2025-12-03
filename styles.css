@@ -5,14 +5,30 @@ body{background: linear-gradient(180deg,#071129 0%,#07102a 60%);color: #e6eef8; 
 .container{max-width: 980px;margin: 36px auto;padding: 16px}
 header{display: flex; align-items: center;justify-content: space-between;}
 .brand{display: flex; gap: 12px; align-items: center; vertical-align: top;}
-.logo{width: 55px;height: 44px;border-radius: 8px; background: linear-gradient(135deg,var(--accent),#06b6d4);display: flex;align-items: center;justify-content: center;font-weight: 700;margin-left: 8px;}
+.logo{width: 55px;height: 44px;border-radius: 8px; background: linear-gradient(135deg,var(--accent),#06b6d4);display: flex;align-items: center;justify-content: center;font-weight: 700;}
 vav a{color: var(--muted);text-decoration: none;margin-left: 16px;}
 .navv{
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    width: auto;
 }
+ ul li{
+    list-style: none;
+ }   
 
+ ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+ }
+
+ ul li a:hover{
+    color: var(--accent);
+ }
+
+ ul li a:active{
+    color: #06b6d4;
+ }  
 
 main{margin-top: 28px;}
 .hero{display: grid;grid-template-columns: 1fr 42px;gap: 28px;align-items: center;}
@@ -83,6 +99,12 @@ footer{margin-top: 34px; color: var(--muted); font-size: 13px; text-align: cente
     background-color: white;
 }
 
+.telegram-button
+.email-button, a{
+    text-decoration: none;
+    color: white;
+}
+
 .telegram-button{
     background-color: #3a3a3b;
     background-color: none;
@@ -103,3 +125,33 @@ footer{margin-top: 34px; color: var(--muted); font-size: 13px; text-align: cente
 .telegram-button:active{
     background-color: white;
 }
+
+.testimonies-container{
+    max-height: 400px;     /* Adjust this height to what looks good initially */
+    overflow: hidden;
+    transition: max-height 0.6s ease;
+    background: #1a1a2e;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.testimonial-container.expanded {
+    max-height: 3000px;    /* Big enough for all testimonials */
+  }
+
+  .toggle-btn {
+    background: #0f3460;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+
+  .toggle-btn:hover { background: #16213e; }
+
+  .toggle-btn:active { background: #1e2a4d }
+  .

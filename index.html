@@ -18,20 +18,12 @@
                 </div>
             </div>
             <nav class="navv">
-                <button class="why-us">
-                <a href="#features">Why us</a>
-                </button>
-
-                <button class="contact">
-                 <a href="#contact">Contact</a>
-                </button>
-
-                <button class="FAQ">
-                  <a href="#faq">FAQ</a>
-                </button>
-                <button class="testimonial">
-                <a href="#testimonies">Testimonies</a>
-                </button>
+                <ul>
+                 <li>  <a href="#features">Why us</a></li>
+                 <li> <a href="#contact">Contact</a></li>
+                <li>  <a href="#faq">FAQ</a></li>
+                <li><a href="#testimonies">Testimonies</a></li> 
+                </ul>
             </nav>
         </header>
 
@@ -121,8 +113,8 @@
                 </aside> 
                 </div>
             </section>
-            <section style="margin-top: 26px" id="testimonies" >
-                <h3 class="card" id="testimonies">Client Testimonies</h3>
+            <section style="margin-top: 26px" id="testimonies-container" >
+                <h3 class="card" id="testimonies-container">Client Testimonies</h3>
                 <div class="card" style="margin-top: 10px;">
                     <p><strong>Michael Thompson</strong> – London, UK
                   <span class="muted"> <br> "I lost £47,000 to a fake trading platform. 
@@ -177,7 +169,22 @@
                              They successfully recovered my coins in 2025.
                               I cried when I saw the transaction. 
                               Merci infiniment!"</span></p>    
+                              <button class="toggle-btn">More</button>
                 </div>
+                <script>
+function toggleTestimonials() {
+  const container = document.getElementById('testimonials');
+  const button = document.querySelector('.toggle-btn');
+  
+  if (container.classList.contains('expanded')) {
+    container.classList.remove('expanded');
+    button.innerHTML = 'Show All Testimonials ▼';
+  } else {
+    container.classList.add('expanded');
+    button.innerHTML = 'Hide Testimonials ▲';
+  }
+}
+</script>
             </section>
 
             <section style="margin-top: 26px" id="fag">
